@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+table {
+  font-size: 13px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+table td {
+  border: 1px solid #000;
+}
+
+table.level-table, table.org-table, table.rule-set-name-table {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 2;
+}
+
+table.level-table {
+  z-index: 3;
+}
+
+table.check-table {
+  z-index: 1;
+  position: absolute;
+}
+
+table td > span {
+  width: 120px;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+table.org-table td > span {
+  text-align: left;
+}
+
+span.rs-name {
+  width: 300px;
+  text-align: left;
+}
+
+.level-0 {
+  background-color: #AEAAAA;
+}
+
+.level-1 {
+  background-color: #FFD966;
+}
+
+.level-2 {
+  background-color: #B4C6E7;
+}
+
+.level-3 {
+  background-color: #C6E0B4;
+}
